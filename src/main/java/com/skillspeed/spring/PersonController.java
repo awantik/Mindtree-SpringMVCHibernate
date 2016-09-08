@@ -29,6 +29,7 @@ public class PersonController {
 		Person p = new Person();
 		p.setCountry("India");
 		model.addAttribute("person", p);
+		
 		model.addAttribute("listPersons", this.personService.listPersons());
 		return "person";
 	}
